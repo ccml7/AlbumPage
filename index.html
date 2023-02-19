@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="./img/deezer-logo-24.png" type="image/x-icon">
     <script src="./main.js"></script>
+    <script src="./modules.js" type="module"></script>
     <title>La Flecha - Feralucia</title>
 </head>
+
 <body>
     <div id="sidebar" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
@@ -22,20 +24,25 @@
         <a href="#">Tienda</a>
     </div>
     <header class="main-header">
+
         <div class="background-img"></div>
+
         <nav class="navbar">
             <div class="menu-icon-container">
                 <span onclick="openNav()"><img src="./img/bx-menu.svg" alt="menu icon"></span>
             </div>
+
             <div class="social-container">
                 <a href="https://www.facebook.com/feraluciala/" target="_blank"><img src="./img/bxl-facebook-circle.svg" alt="facebook icon" class="navbar-icon"></a>
                 <a href="https://www.instagram.com/feralucia_/?hl=es" target="_blank"><img src="./img/bxl-instagram.svg" alt="instagram-icon" class="navbar-icon"></a>
                 <a href="https://twitter.com/feraluciamusic?lang=es" target="_blank"><img src="./img/bxl-twitter.svg" alt="twitter icon" class="navbar-icon"></a>
             </div>
         </nav>
+
         <div class="spotify-icon-container">
             <a target="_blank" href="https://open.spotify.com/artist/5Cy9hXh0AFvHlRwdzzVPrB"><img src="./img/bxl-spotify.svg" alt="spotify icon"></a>
         </div>
+
         <section class="cover-header">
             <div class="album-cover">
                 <span>LA FLECHA - Lanzado julio 13, 2022</span>
@@ -52,11 +59,242 @@
                     <a class="share-button" href="#" target="_blank"><img src="./img/bxs-share-alt.svg" alt="share icon"> Compartir</a>
                 </div>
             </div>
-        </section>
+        </section>        
     </header>
     <main>
-        <section class="section1">
+        <section class="platforms">
+            <h1>Disponible en tu plataforma favorita</h1>
+            <div class="platforms-container">
+                <a href="https://soundcloud.com/feralucia" target="_blank"><img src="./img/bxl-soundcloud.svg" alt="soundcloud logo" class="platform-icon" id="soundcloud"></a>
+                <a href="https://www.deezer.com/mx/artist/10177402" target="_blank"><img src="./img/bxl-deezer.svg" alt="deezer logo" class="platform-icon" id="deezer"></a>
+                <a href="https://www.youtube.com/channel/UCgZniiRBUCeW8ovzb_8HzQA" target="_blank"><img src="./img/bxl-youtube.svg" alt="youtube logo" class="platform-icon" id="youtube"></a>
+                <a href="https://open.spotify.com/artist/5Cy9hXh0AFvHlRwdzzVPrB" target="_blank"><img src="./img/bxl-spotify.svg" alt="spotify logo" class="platform-icon" id="spotify"></a>
+                <a href="https://music.apple.com/us/artist/feralucia/1102770290" target="_blank"><img src="./img/icons8-itunes.svg" alt="itunes logo" class="platform-icon" id="itunes"></a>
+            </div>
         </section>
+        <section class="tracklist-section">
+
+            <h1>Tracklist</h1>
+
+            <div class="track-container">
+                <div class="track-info">
+                    <p>1</p>
+                    <div class="audio-player-container" id="track1">
+                        <audio src="./music/1_La Flecha.mp3" preload="metadata"></audio>
+                        <button id="play-icon1"></button>
+                    </div>
+                    <div class="track-name-container">
+                        <h2>La Flecha</h2>
+                        <h3>Feralucia</h3>
+                    </div>
+                </div>
+                <div class="track-spec">
+                    <p>4:17</p>
+                    <img src="./img/bxs-share-alt.svg" alt="share icon">
+                </div>
+            </div>
+
+            <div class="track-container" id="track2">
+                <div class="track-info">
+                    <p>2</p>
+                    <div class="audio-player-container">
+                        <audio src="./music/2_La Quema.mp3" preload="metadata"></audio>
+                        <button id="play-icon2"></button>
+                    </div>
+                    <div class="track-name-container">
+                        <h2>La Quema</h2>
+                        <h3>Feralucia</h3>
+                    </div>
+                </div>
+                <div class="track-spec">
+                    <p>3:06</p>
+                    <img src="./img/bxs-share-alt.svg" alt="share icon">                                 
+                </div>
+            </div>
+
+            <div class="track-container" id="track3">
+                <div class="track-info">
+                    <p>3</p>
+                    <div class="audio-player-container">
+                        <audio src="./music/3_La Sombra de lo Bello.mp3" preload="metadata"></audio>
+                        <button id="play-icon3"></button>
+                    </div>
+                    <div class="track-name-container">
+                        <h2>La Sombra de lo Bello</h2>
+                        <h3>Feralucia</h3>
+                    </div>
+                </div>
+                <div class="track-spec">
+                    <p>4:11</p>
+                    <img src="./img/bxs-share-alt.svg" alt="share icon">
+                </div>
+            </div>
+
+            <div class="track-container" id="track4">
+                <div class="track-info">
+                    <p>4</p>
+                    <div class="audio-player-container">
+                        <audio src="./music/4_Nube.mp3" preload="metadata"></audio>
+                        <button id="play-icon4"></button>
+                    </div>
+                    <div class="track-name-container">
+                        <h2>Nube</h2>
+                        <h3>Feralucia</h3>
+                    </div>
+                </div>
+                <div class="track-spec">
+                    <p>4:07</p>
+                    <img src="./img/bxs-share-alt.svg" alt="share icon">
+                </div>
+            </div>
+
+            <div class="track-container" id="track5">
+                <div class="track-info">
+                    <p>5</p>
+                    <div class="audio-player-container">
+                        <audio src="./music/5_Perla.mp3" preload="metadata"></audio>
+                        <button id="play-icon5"></button>
+                    </div>
+                    <div class="track-name-container">
+                        <h2>Perla</h2>
+                        <h3>Feralucia</h3>
+                    </div>
+                </div>
+                <div class="track-spec">
+                    <p>3:47</p>
+                    <img src="./img/bxs-share-alt.svg" alt="share icon">
+                </div>
+            </div>
+
+            <div class="track-container" id="track6">
+                <div class="track-info">
+                    <p>6</p>
+                    <div class="audio-player-container">
+                        <audio src="./music/6_Volver.mp3" preload="metadata"></audio>
+                        <button id="play-icon6"></button>
+                    </div>
+                    <div class="track-name-container">
+                        <h2>Volver</h2>
+                        <h3>Feralucia</h3>
+                    </div>
+                </div>
+                <div class="track-spec">
+                    <p>4:41</p>
+                    <img src="./img/bxs-share-alt.svg" alt="share icon">
+                </div>
+            </div>       
+
+
+            <div class="track-container" id="track7">
+                <div class="track-info">
+                    <p>7</p>
+                    <div class="audio-player-container">
+                        <audio src="./music/7_Tu Rostro.mp3" preload="metadata"></audio>
+                        <button id="play-icon7"></button>
+                    </div>
+                    <div class="track-name-container">
+                        <h2>Tu Rostro</h2>
+                        <h3>Feralucia</h3>
+                    </div>
+                </div>
+                <div class="track-spec">
+                    <p>4:27</p>
+                    <img src="./img/bxs-share-alt.svg" alt="share icon">
+                </div>
+            </div>
+
+
+            <div class="track-container" id="track8">
+                <div class="track-info">
+                    <p>8</p>
+                    <div class="audio-player-container">
+                        <audio src="./music/8_Fanático en Vela.mp3" preload="metadata"></audio>
+                        <button id="play-icon8"></button>
+                    </div>
+                    <div class="track-name-container">
+                        <h2>Fanático en Vela</h2>
+                        <h3>Feralucia</h3>
+                    </div>
+                </div>
+                <div class="track-spec">
+                    <p>3:44</p>
+                    <img src="./img/bxs-share-alt.svg" alt="share icon">
+                </div>
+            </div>
+
+
+            <div class="track-container" id="track9">
+                <div class="track-info">
+                    <p>9</p>
+                    <div class="audio-player-container">
+                        <audio src="./music/9_Solo Tú.mp3" preload="metadata"></audio>
+                        <button id="play-icon9"></button>
+                    </div>
+                    <div class="track-name-container">
+                        <h2>Solo Tú</h2>
+                        <h3>Feralucia</h3>
+                    </div>
+                </div>
+                <div class="track-spec">
+                    <p>3:18 </p>
+                    <img src="./img/bxs-share-alt.svg" alt="share icon">
+                </div>
+            </div>
+
+            <div class="track-container" id="track10">
+                <div class="track-info">
+                    <p>10</p>
+                    <div class="audio-player-container">
+                        <audio src="./music/10_Permiso.mp3" preload="metadata"></audio>
+                        <button id="play-icon10"></button>
+                    </div>
+                    <div class="track-name-container">
+                        <h2>Permiso</h2>
+                        <h3>Feralucia</h3>
+                    </div>
+                </div>
+                <div class="track-spec">
+                    <p>5:00</p>
+                    <img src="./img/bxs-share-alt.svg" alt="share icon">
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h1>Videos</h1>
+            <iframe src="https://www.youtube.com/embed/E9LnAT6S7P4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <hr id="1hr">
+        <section class="final-section">
+            <div class="addinfo-container">
+                <ul class="list-info">
+                    <li><a href="#">Conoce más</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Patrocinadores</a></li>
+                    <li> <a href="#">Noticias</a></li>
+                    <li> <a href="#">Prensa</a></li>
+                </ul>
+            </div>
+            <div class="addinfo-container">
+                <ul class="list-info">
+                    <li> <a href="#">Términos de Servicio</a></li>
+                    <li> <a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="contact-container">
+                <h2>Newsletter</h2>
+                <p>No te pierdas nada, sigue todos mis eventos. Subscríbete para más información.</p>
+                <div class="input-container">
+                    <input type="email" name="email-newsletter" placeholder="Ingresa tu email">
+                    <button></button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <footer>
+            <p>Desarrollado por <a href="https://twitter.com/ccml7">Christian Morales</a></p>
+            <p>Diseño tomado de <a href="https://www.monstercat.com/release/MCLP017">Monstercat.com</a></p>
+        </footer>
     </main>
 </body>
 </html>
