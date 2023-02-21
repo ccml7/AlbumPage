@@ -1,0 +1,92 @@
+.sidenav {
+    left: 0;
+}
+
+.navbar {
+    flex-direction: row;
+    grid-column: 1 / 10;
+    grid-row: 1;
+    right: 1%;   
+    width: 100vw;
+    height: 50px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(1,1,1,0.5);
+    overflow-x: hidden;
+}
+
+.spotify-icon-container {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 0;
+}
+
+.spotify-icon-container img {
+    margin: 6rem 0 0 3rem;
+}
+
+.social-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5rem 0 0;
+    padding: 0;
+}
+
+.social-container  img {
+    margin: 0 1rem;
+}
+
+.menu-icon-container {
+    margin-left: 5rem;
+}
+
+.cover-header {
+    flex-direction: column;
+    grid-column: 1      / 10;
+    grid-row: 3;
+}
+
+.album-cover {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-cover img {
+    width: 600px;
+}
+
+.album-cover span {
+    width: 50%;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    writing-mode: horizontal-tb;
+    transform: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.album-info {
+    width: 100%;
+    margin: 0;
+    margin-top: 6rem;
+}
+
+.video-section iframe {
+    height: 400px;
+}
+
+.final-section ul {
+    font-size: 1.6rem;
+}
+
+.contact-container h2 {
+    margin-top: 0;
+}
+
+.contact-container p {
+    font-size: 1.4rem;
+}

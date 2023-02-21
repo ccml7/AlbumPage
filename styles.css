@@ -214,7 +214,7 @@ hr {
 .cover-header {
     display: flex;
     flex-direction: row;
-    grid-column: 2 / 9;
+    grid-column: 2 / 10;
     grid-row: 3 / 10;
     width: 80vw;
     margin: 0 auto;
@@ -421,13 +421,17 @@ hr {
     justify-content: flex-start;
 }
 
-.track-info p, .track-spec p {
+.track-spec p {
     font-size: 1.8rem;
     font-weight: bold;
     margin-right: 2rem;
 }
 
 .track-info p {
+    width: 4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
     margin-bottom: .4rem;
 }
 
@@ -566,6 +570,7 @@ hr {
 }
 
 .input-container input {
+    width: 90%;
     background: transparent;
     border: none;
     color: rgb(118, 118, 118);
