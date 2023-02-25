@@ -1,0 +1,77 @@
+.navbar {
+    right: 0%;
+}
+
+.spotify-icon-container {
+    display: none;
+}
+
+.cover-header {
+    margin-top: 6rem;
+}
+
+.album-cover {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.album-cover img {
+    width: 300px;
+    min-width: 220px;
+}
+
+.platforms-container {
+    width: 85%;
+}
+
+.track-info h2 {
+    font-size: 1.8rem;
+}
+
+.track-info h3 {
+    font-size: 1.4rem;
+}
+
+.track-info p {
+    font-size: 1.4rem;
+}
+
+.track-spec p {
+    font-size: 1.4rem;
+}
+
+.video-section iframe {
+    height: 200px;
+    margin-bottom: 4rem;
+}
+
+.addinfo-container {
+    margin: 0;
+    width: 100%;
+}
+
+.final-section {
+    flex-direction: column;
+}
+
+.final-section ul {
+    font-size: 1.6rem;
+}
+
+.contact-container {
+    width: 100%;
+    margin: 2rem 0 0 0;
+}
+
+.contact-container h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.contact-container p {
+    font-size: 1.4rem;
+}
+
+.contact-container input {
+    font-size: 1.2rem;
+}

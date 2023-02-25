@@ -44,7 +44,7 @@
 
 .cover-header {
     flex-direction: column;
-    grid-column: 1      / 10;
+    grid-column: 1 / 10;
     grid-row: 3;
 }
 

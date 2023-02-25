@@ -24,14 +24,34 @@ function isOnPlay() {
 }
 
 
-// let buttonStates = [0, 0];
+function stopMusic() {
+
+    const allAudioElements = document.getElementsByTagName('audio');
+
+    for (let i = 0; i < allAudioElements.length; i++) {
+        const audioPlay = allAudioElements[i];
+
+        if (!audioPlay.paused) {
+
+            // console.log('Stop music is running!')
+
+            let containerSound = audio.nextElementSibling;
+            const elementId = containerSound.id;
+            console.log(elementId);
+            // containerSound.innerHTML = ''
+
+            audioPlay.pause();
+
+        }
+    }
+}
 
 
 
 function playButton(id, id2, idNumber) {
 
-    const playIconContainer = document.getElementById(id);
-    const trackContainer = document.getElementById(id2)
+    let playIconContainer = document.getElementById(id);
+    let trackContainer = document.getElementById(id2)
 
     console.log(playIconContainer);
 
@@ -44,58 +64,20 @@ function playButton(id, id2, idNumber) {
         name: 'Demo Animation',
     });
 
+    console.log(animation);
+
     animation.goToAndStop(14, true);
-
-    function stopMusic() {
-
-        const allAudioElements = document.getElementsByTagName('audio');
-
-        for (let i = 0; i < allAudioElements.length; i++) {
-            const audioPlay = allAudioElements[i];
-
-            if (!audioPlay.paused) {
-
-                // console.log('Stop music is running!')
-
-                let containerSound = audio.nextElementSibling;
-                const elementId = containerSound.id;
-                console.log(elementId);
-                // containerSound.innerHTML = '';
-
-                // let animation2 = lottieweb.loadAnimation({
-                //     container: containerSound,
-                //     path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json',
-                //     renderer: 'svg',
-                //     loop: false,
-                //     autoplay: false,
-                //     name: 'Demo Animation',
-                // });
-
-                // animation2.goToAndStop(14, true);
-
-                audioPlay.pause();
-                buttonStates[i] = 1;
-                // console.log(containerSound);
-                // animation2.playSegments([0,14], true);
-
-
-                // console.log(i);
-
-                break;
-
-            }
-        }
-    }
 
     // const audio = document.querySelector('audio')
     let audio = trackContainer.querySelector('audio');
     playIconContainer.addEventListener('click', () => {
 
         if (state === 'play') {
-         audio.play();
-         animation.playSegments([14, 27], true);
-         state = 'pause'
-         console.log(state);
+            // stopMusic();
+            audio.play();
+            animation.playSegments([14, 27], true);
+            state = 'pause'
+            console.log(state);
      } else {
          audio.pause();
          state = 'play';
