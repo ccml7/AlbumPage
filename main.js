@@ -1,3 +1,6 @@
+let tabletWidth = window.matchMedia("(max-width: 1080px)")
+let phoneWidth = window.matchMedia("(max-width: 450px)")
+
 function openNav() {
     
     if (tabletWidth.matches) {
@@ -13,7 +16,5 @@ function closeNav() {
     document.getElementById("sidebar").style.width = "0";
 }
 
-let tabletWidth = window.matchMedia("(max-width: 1080px)")
-let phoneWidth = window.matchMedia("(max-width: 450px)")
 
 console.log(phoneWidth);
